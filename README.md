@@ -11,7 +11,6 @@ The app provides personalized access to the latest news across categories, secur
 - **Password Security:** User passwords hashed with Bcrypt.  
 - **News Aggregation:** Fetches and displays news using the [GNews API](https://gnews.io/).  
 - **Category-based Filtering:** Users can browse news by category (Technology, Business, Sports, Health, etc.).  
-- **Responsive Design:** Optimized for desktop and mobile screens.  
 
 ---
 
@@ -59,9 +58,10 @@ JWT_SECRET=
 
 # Running the Application 
 
-<pre># Run the backend (from /backend)
-cd backend
-node server.js</pre>
+<pre>
+  # Run the backend (from /backend)
+  cd backend
+  node server.js</pre>
 
 <pre>
   # Run the frontend (from /frontend)
