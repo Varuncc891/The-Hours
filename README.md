@@ -38,25 +38,21 @@ To get a local copy up and running, follow these steps:
 
 ## Installation
 
-# Clone the repository
+**Clone the repository**
 <pre>git clone https://github.com/Varuncc891/The-Hours.git</pre>
 
-# Navigate into the project folder
+**Navigate into the project folder**
 <pre>cd The-Hours</pre>
 
-# Install backend dependencies
+**Install backend dependencies**
 <pre>cd backend
 npm install</pre>
 
-# Install frontend dependencies
+**Install frontend dependencies**
 <pre>cd ../frontend
 npm install</pre>
 
-PORT=
-DB_URL=
-JWT_SECRET=
-
-# Running the Application 
+**Running the Application** 
 
 <pre>
   # Run the backend (from /backend)
@@ -67,4 +63,12 @@ JWT_SECRET=
   # Run the frontend (from /frontend)
 cd ../frontend
 npm run dev
+</pre>
+
+**.env file to be created in the backend folder.**
+<pre>
+  PORT=
+  DB_URL=
+  JWT_SECRET=
+  GNEWS_KEY= 
 </pre>
