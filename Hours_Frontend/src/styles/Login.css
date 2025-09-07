@@ -1,0 +1,138 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FAF3E0;
+}
+
+.login-header {
+  background-color: #2C3E50;
+  color: #FAF3E0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  height: 90px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: 999;
+  font-family: "Montserrat", "Segoe UI", sans-serif;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FAF3E0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 160px); 
+  padding: 40px;
+  gap: 80px;
+  background-color: #FAF3E0;
+}
+
+.login-left {
+  max-width: 400px;
+  color: #2C3E50;
+}
+
+.login-left h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.login-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.login-form {
+  background-color: #2C3E50;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px;
+  color: #FAF3E0;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FAF3E0;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f0e9d2;
+  color: #1A1A1A;
+  font-size: 1rem;
+}
+
+.login-form input::placeholder {
+  color: #555;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #FAF3E0;
+  color: #2C3E50;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #d6cbb2;
+}
+
+.login-form p {
+  color: #FAF3E0;
+  margin-top: 10px;
+}
+
+.register-link {
+  color: #81ecec;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-footer {
+  background-color: #2C3E50;
+  color: #FAF3E0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  height: 40px;
+  flex-shrink: 0;
+  margin-top: 29px;
+}
+
