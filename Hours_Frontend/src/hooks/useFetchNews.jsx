@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-const apiKey = "4779fc6ddd461b6c09227f571f8eb263";
-
 export default function useFetchNews(category) {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -9,8 +7,13 @@ export default function useFetchNews(category) {
   const fetchNews = async (pageNum = 1, reset = false) => {
     setLoading(true);
     try {
-      const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=in&max=10&page=${pageNum}&token=${apiKey}`;
+      const url = `http://localhost:3000/api/news?category=${category}&pageNum=${pageNum}`;
       const res = await fetch(url);
+      
+      if (!res.ok) {
+        throw new Error(`Server returned ${res.status}`);
+      }
+      
       const data = await res.json();
 
       if (data.articles && Array.isArray(data.articles)) {
